@@ -1,0 +1,7 @@
+%h1 All Posts Here
+
+%ul
+- @posts.each do |post|
+  %li
+    %a{:href => "/blog/#{post}"}
+      = post
